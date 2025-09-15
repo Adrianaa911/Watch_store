@@ -1,0 +1,119 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f9f9f9;
+  }
+  
+  .container {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  .leftMenu {
+    flex: 1;
+    max-width: 250px;
+  }
+  
+  .search {
+    padding: 10px;
+    width: 100%;
+    border: 2px solid #EFCC00;
+    border-radius: 5px;
+  }
+  
+  h1 {
+    font-size: 22px;
+    color: #333;
+    font-weight: 400;
+    margin-top: 20px;
+  }
+  
+  .cats {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .cat {
+    cursor: pointer;
+    padding: 5px;
+    transition: all 0.2s ease;
+  }
+  
+  .cat:hover {
+    color: #EFCC00;
+  }
+  
+  .cat.active {
+    font-weight: bold;
+    color: #EFCC00;
+    border-bottom: 2px solid #EFCC00;
+  }
+  
+  .price {
+    margin-top: 10px;
+  }
+  
+  .priceValue {
+    display: block;
+    margin-top: 5px;
+    font-weight: bold;
+  }
+  
+  .resetBtn {
+    margin-top: 20px;
+    padding: 8px 12px;
+    background: #EFCC00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .resetBtn:hover {
+    background: #e0bd00;
+  }
+  
+  .content {
+    flex: 4;
+  }
+  
+  .sort {
+    margin-bottom: 20px;
+  }
+  
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .product {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .product img {
+    width: 150px;
+    height: 200px;
+    object-fit: contain;
+  }
+  
+  .name {
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .priceText {
+    font-weight: bold;
+    color: #444;
+  }
+  

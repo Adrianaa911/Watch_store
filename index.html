@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filter Project</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Script -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Sidebar -->
+    <div class="leftMenu">
+      <input type="text" placeholder="Search..." class="search">
+
+      <h1>Categories</h1>
+      <div class="cats"></div>
+
+      <h1>Maximum Price</h1>
+      <div class="price">
+        <input type="range" class="priceRange">
+        <span class="priceValue"></span>
+      </div>
+
+      <button class="resetBtn">Reset Filters</button>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+      <div class="sort">
+        <label for="sortSelect">Sort by:</label>
+        <select id="sortSelect">
+          <option value="">Default</option>
+          <option value="asc">Price: Low → High</option>
+          <option value="desc">Price: High → Low</option>
+          <option value="az">Name: A–Z</option>
+          <option value="za">Name: Z–A</option>
+        </select>
+      </div>
+
+      <div class="products"></div>
+    </div>
+  </div>
+
+</body>
+</html>
